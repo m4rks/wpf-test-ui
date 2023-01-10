@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wpf-test-ui", "wpf-test-ui\wpf-test-ui.csproj", "{84D2DB79-8FBC-4188-9064-9B4501E7B4C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84D2DB79-8FBC-4188-9064-9B4501E7B4C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84D2DB79-8FBC-4188-9064-9B4501E7B4C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84D2DB79-8FBC-4188-9064-9B4501E7B4C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84D2DB79-8FBC-4188-9064-9B4501E7B4C5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3EB19A81-36FC-4673-8112-3769C1F4AD24}
+	EndGlobalSection
+EndGlobal
