@@ -4,9 +4,11 @@
              xmlns:local="clr-namespace:wpf_test_ui"
              xmlns:vm="clr-namespace:wpf_test_ui.ViewModels"
              xmlns:uc="clr-namespace:wpf_test_ui.UserControls"
+             xmlns:com="clr-namespace:wpf_test_ui.Common"
              StartupUri="Views\Shell.xaml">
     <Application.Resources>
         <ResourceDictionary>
+            
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/DarkStyles.xaml" />
             </ResourceDictionary.MergedDictionaries>
@@ -15,6 +17,7 @@
                 <uc:PumpControlUserControl />
             </DataTemplate>
 
+            <com:ViewModelLocator x:Key="ViewModelLocator"/>
         </ResourceDictionary>
 
 
