@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 C:\Users\micha\source\repos\06_MVVM\05_UI_test\WpfClient\wpf-test-ui\App.xaml
 5628651869
 
-21-298964352
+161441085708
 197-1569008289
 Resources\DarkStyles.xaml;UserControls\PumpControlUserControl.xaml;UserControls\TaskControlUserControl.xaml;Views\Login.xaml;Views\Shell.xaml;
 
-True
+False
 

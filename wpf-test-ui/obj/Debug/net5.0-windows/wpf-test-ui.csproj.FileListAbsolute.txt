@@ -35,3 +35,4 @@ C:\Users\micha\source\repos\06_MVVM\05_UI_test\WpfClient\wpf-test-ui\bin\Debug\n
 C:\Users\micha\source\repos\06_MVVM\05_UI_test\WpfClient\wpf-test-ui\bin\Debug\net5.0-windows\UC_Analyze.dll
 C:\Users\micha\source\repos\06_MVVM\05_UI_test\WpfClient\wpf-test-ui\bin\Debug\net5.0-windows\UC_Analyze.pdb
 C:\Users\micha\source\repos\06_MVVM\05_UI_test\WpfClient\wpf-test-ui\bin\Debug\net5.0-windows\Common.pdb
+C:\Users\micha\source\repos\06_MVVM\05_UI_test\WpfClient\wpf-test-ui\bin\Debug\net5.0-windows\NLog.dll

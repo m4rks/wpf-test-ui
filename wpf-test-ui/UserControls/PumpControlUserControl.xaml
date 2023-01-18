@@ -4,11 +4,23 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:wpf_test_ui.UserControls"
+             xmlns:vm="clr-namespace:wpf_test_ui.ViewModels"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.DataContext>
+        <vm:PumpControlViewModel/>
+    </UserControl.DataContext>
+
+
     <Grid>
         <Grid Background="White">
-            <Label Content="Pump Control View Model" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="34" />
+            <StackPanel>
+                <Label Content="Pump Control View Model" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" />
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" >
+                    <Label Content="{Binding Path=Name}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" />
+                    <Button Width="200" Command="{Binding ShowTaskForPumpCommand}" Background="ForestGreen" FontSize="20" >Show task for pump</Button>
+                </StackPanel>
+            </StackPanel>
         </Grid>
 
     </Grid>
