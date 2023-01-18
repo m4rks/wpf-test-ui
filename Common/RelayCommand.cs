@@ -1,40 +1,28 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace wpf_test_ui.ViewModels
+namespace Common
 {
     public class RelayCommand : ICommand
     {
+        public event EventHandler CanExecuteChanged;
 
-        public event EventHandler CanExecuteChanged
-        {
-            add { CommandManager.RequerySuggested += value; }
-            remove { CommandManager.RequerySuggested -= value; }
-        }
+        private readonly Action execute;
+        private readonly Func<bool> canExecute;
 
-        private readonly Action<object> execute;
-        private readonly Func<object, bool> canExecute;
 
-        public RelayCommand(Action<object> execute, Func<object, bool> canExecute = null)
+        public RelayCommand(Action execute, Func<bool> canExecute = null)
         {
             this.execute = execute;
             this.canExecute = canExecute;
         }
 
-
         public bool CanExecute(object parameter)
         {
-            return canExecute == null || canExecute.Invoke(parameter);
+            return canExecute == null || canExecute();
         }
 
-        public void Execute(object parameter)
-        {
-            execute?.Invoke(parameter);
-        }
+        public void Execute(object parameter) => execute?.Invoke();
     }
 
     public class RelayCommand<T> : ICommand

@@ -13,6 +13,41 @@
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WPF"
         ]
+      },
+      "NLog/5.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/NLog.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {}
+        }
+      },
+      "Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.dll": {}
+        }
+      },
+      "UC_Analyze/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/UC_Analyze.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UC_Analyze.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
       }
     }
   },
@@ -41,11 +76,47 @@
         "microsoft.xaml.behaviors.wpf.nuspec",
         "tools/Install.ps1"
       ]
+    },
+    "NLog/5.1.1": {
+      "sha512": "YBfUDzipCaucs+8ieCDp8XECumiWsQbZwSUVLlt9i7FGV03nOPqoVzLtmlhbTxq4TN92BBsLacqPAE/ZyDDJ1g==",
+      "type": "package",
+      "path": "nlog/5.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "N.png",
+        "lib/net35/NLog.dll",
+        "lib/net35/NLog.xml",
+        "lib/net45/NLog.dll",
+        "lib/net45/NLog.xml",
+        "lib/net46/NLog.dll",
+        "lib/net46/NLog.xml",
+        "lib/netstandard1.3/NLog.dll",
+        "lib/netstandard1.3/NLog.xml",
+        "lib/netstandard1.5/NLog.dll",
+        "lib/netstandard1.5/NLog.xml",
+        "lib/netstandard2.0/NLog.dll",
+        "lib/netstandard2.0/NLog.xml",
+        "nlog.5.1.1.nupkg.sha512",
+        "nlog.nuspec"
+      ]
+    },
+    "Common/1.0.0": {
+      "type": "project",
+      "path": "../Common/Common.csproj",
+      "msbuildProject": "../Common/Common.csproj"
+    },
+    "UC_Analyze/1.0.0": {
+      "type": "project",
+      "path": "../UC_Analyze/UC_Analyze.csproj",
+      "msbuildProject": "../UC_Analyze/UC_Analyze.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
-      "Microsoft.Xaml.Behaviors.Wpf >= 1.1.39"
+      "Microsoft.Xaml.Behaviors.Wpf >= 1.1.39",
+      "NLog >= 5.1.1",
+      "UC_Analyze >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -79,7 +150,11 @@
       "frameworks": {
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\micha\\source\\repos\\06_MVVM\\05_UI_test\\WpfClient\\UC_Analyze\\UC_Analyze.csproj": {
+              "projectPath": "C:\\Users\\micha\\source\\repos\\06_MVVM\\05_UI_test\\WpfClient\\UC_Analyze\\UC_Analyze.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -95,6 +170,10 @@
           "Microsoft.Xaml.Behaviors.Wpf": {
             "target": "Package",
             "version": "[1.1.39, )"
+          },
+          "NLog": {
+            "target": "Package",
+            "version": "[5.1.1, )"
           }
         },
         "imports": [

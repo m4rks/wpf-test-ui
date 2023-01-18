@@ -7,18 +7,33 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Login.xaml.cs">
+    <Compile Update="UserControls\PumpControlUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControls\TaskControlUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Login.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Shell.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Login.xaml">
+    <Page Update="UserControls\PumpControlUserControl.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="MainWindow.xaml">
+    <Page Update="UserControls\TaskControlUserControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Login.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Resources\DarkStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Shell.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

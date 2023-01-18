@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "s7eLWEdfo9s8KJBPIabjAlxXkGPxuAKCVooYuiMOZUfiek01YEF4Ozd+rwQQBFmgvOWBA5zR8RyUQPoZrbfFoA==",
+  "dgSpecHash": "RXa5+S6rQvA2MpFC20ZgnulgD5CR4c4GsVLzS7rU+xF9MxYi2rC9BrQnddWWQubxpdn1GXO6dJeAzEggOaPqVw==",
   "success": true,
   "projectFilePath": "C:\\Users\\micha\\source\\repos\\06_MVVM\\05_UI_test\\WpfClient\\wpf-test-ui\\wpf-test-ui.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\micha\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
+    "C:\\Users\\micha\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\nlog\\5.1.1\\nlog.5.1.1.nupkg.sha512"
   ],
   "logs": []
 }

@@ -10,20 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
-using wpf_test_ui.ViewModels;
 
-namespace wpf_test_ui
+namespace wpf_test_ui.UserControls
 {
     /// <summary>
-    /// Interaction logic for Login.xaml
+    /// Interaction logic for PumpControlUserControl.xaml
     /// </summary>
-    public partial class Login : Window
+    public partial class PumpControlUserControl : UserControl
     {
-        public Login()
+        public PumpControlUserControl()
         {
             InitializeComponent();
-            tbInputName.Focus();
         }
     }
 }

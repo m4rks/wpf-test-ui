@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:wpf_test_ui"
         mc:Ignorable="d"
         Title="Login" Height="250" Width="250"
-        xmlns:vm="clr-namespace:wpf_test_ui.ViewModels">
+        xmlns:vm="clr-namespace:wpf_test_ui.ViewModels"
+        MouseDown="Window_MouseDown"  >
     <Window.DataContext>
         <vm:LoginViewModel/>
     </Window.DataContext>

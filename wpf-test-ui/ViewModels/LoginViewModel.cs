@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace wpf_test_ui.ViewModels
 {
-    public class LoginViewModel : Base
+    public class LoginViewModel : BaseViewModel
     {
         #region Property
         private string _inputName;
@@ -42,6 +42,8 @@ namespace wpf_test_ui.ViewModels
         private string Name = string.Empty;
 
         public LoginViewModel()
+        { }
+        public LoginViewModel(string input)
         {
             InputName = "";
             RequestedUserAndPasswordLabel = "UserName?";
@@ -62,8 +64,8 @@ namespace wpf_test_ui.ViewModels
 
             if (!string.IsNullOrWhiteSpace(InputName) && Name != string.Empty)
             {
-                MainWindow mainWindow = new MainWindow();
-                mainWindow.Show();
+                //MainWindow mainWindow = new MainWindow();
+                //mainWindow.Show();
             }
 
 

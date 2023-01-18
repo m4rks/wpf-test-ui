@@ -11,4 +11,15 @@
     <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.39" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Common\" />
+    <Folder Include="Command\" />
+    <Folder Include="Assets\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UC_Analyze\UC_Analyze.csproj" />
+  </ItemGroup>
+
 </Project>

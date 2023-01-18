@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v5.0": {
       "wpf-test-ui/1.0.0": {
         "dependencies": {
-          "Microsoft.Xaml.Behaviors.Wpf": "1.1.39"
+          "Microsoft.Xaml.Behaviors.Wpf": "1.1.39",
+          "UC_Analyze": "1.0.0"
         },
         "runtime": {
           "wpf-test-ui.dll": {}
@@ -20,6 +21,19 @@
             "assemblyVersion": "1.1.0.0",
             "fileVersion": "1.1.39.4716"
           }
+        }
+      },
+      "Common/1.0.0": {
+        "runtime": {
+          "Common.dll": {}
+        }
+      },
+      "UC_Analyze/1.0.0": {
+        "dependencies": {
+          "Common": "1.0.0"
+        },
+        "runtime": {
+          "UC_Analyze.dll": {}
         }
       }
     }
@@ -36,6 +50,16 @@
       "sha512": "sha512-8PZKqw9QOcu42xk8puY4P1+EXHL9YGOR9b7qhaYx5cILHul456H073tj99vyPcCt0W0781T9RwHqkx507ZyUpQ==",
       "path": "microsoft.xaml.behaviors.wpf/1.1.39",
       "hashPath": "microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
+    },
+    "Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UC_Analyze/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
